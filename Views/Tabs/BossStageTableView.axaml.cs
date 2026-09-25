@@ -127,7 +127,7 @@ public partial class BossStageTableView : TableTab
             ContentGroup.IsVisible = true;
             TextBoxName.Text = data.Name.Value?.Value ?? "NO_NAME";
 
-            FName dummyName = FName.FromString(asset, "StrProperty");
+            FName dummyName = FName.DefineDummy(asset, "0");
             ((ArrayEditor)ArrayAppearConditionArray.Content!).SetTable(asset, data, appearConditionArray, new StrPropertyData(dummyName)); 
             ((ArrayEditor)ArrayUnlockConditionArray.Content!).SetTable(asset, data, unlockConditionArray, new StrPropertyData(dummyName)); 
             
