@@ -397,7 +397,7 @@ public partial class MusicUnlockTableView : TableTab
 
                     break;
                 }
-                    
+
                 // StrProperty
                 case "TextBoxNameTag":
                 case "TextBoxExplanationTextTag":
